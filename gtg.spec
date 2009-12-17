@@ -8,6 +8,8 @@ Source:         gtg-%{version}.tar.gz
 URL:            http://gtg.fritalk.com/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+BuildArch: noarch
+
 Requires: pyxdg
 
 %description
