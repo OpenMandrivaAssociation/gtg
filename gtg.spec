@@ -34,7 +34,7 @@ If you wanna know more about this, please read Getting Started With GTG.
 %install
 %__rm -rf %{buildroot}
 #mkdir -p %{buildroot}%{_bindir}
-python setup.py install --prefix=%{buildroot}%_prefix
+python setup.py install --prefix=%{buildroot}%_prefix --install-lib=%{buildroot}%{_libdir}/python2.6/site-packages
 
 %clean
 %__rm -rf %{buildroot}
