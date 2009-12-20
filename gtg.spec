@@ -11,6 +11,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 #BuildArch: noarch
 
 BuildRequires: pyxdg
+BuildRequires: python-devel
 
 %description
 Getting Things Gnome! is an organizer for the GNOME desktop environment.
