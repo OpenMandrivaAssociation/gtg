@@ -1,5 +1,5 @@
 Name:           gtg
-Version:        0.2.0
+Version:        0.2
 Release:        %mkrel 1
 Group:          Development/Other
 License:        GPLv3
@@ -38,6 +38,7 @@ python setup.py install --prefix=%{buildroot}%_prefix --install-lib=%{buildroot}
 %files
 %defattr(-,root,root)
 %_bindir/%name
+%_bindir/%{name}_new_task
 %{py_platsitedir}
 %{_prefix}/share
 %_mandir
