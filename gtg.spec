@@ -1,5 +1,5 @@
 Name:           gtg
-Version:        0.2
+Version:        0.2.2
 Release:        %mkrel 1
 Group:          Development/Other
 License:        GPLv3
