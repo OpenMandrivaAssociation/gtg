@@ -16,6 +16,13 @@ Requires:      pygtk2.0
 Requires:      pygtk2.0-libglade
 Requires:      pyxdg
 Requires:      python-gobject
+Suggests: python-bugz
+Suggests: python-evolution
+Suggests: hamster-applet
+Suggests: python-champlain
+Suggests: python-clutter
+Suggests: python-clutter-gtk
+#Suggests:python-geoclue
 
 %description
 Getting Things Gnome! is an organizer for the GNOME desktop environment.
