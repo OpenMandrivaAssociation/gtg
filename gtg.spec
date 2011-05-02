@@ -1,6 +1,6 @@
 Name:           gtg
 Version:        0.2.4
-Release:        %mkrel 3
+Release:        %mkrel 4
 Group:          Development/Other
 License:        GPLv3
 Summary:        Getting Things GNOME! is an organizer for the GNOME desktop environment
