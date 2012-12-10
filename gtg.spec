@@ -61,3 +61,54 @@ python setup.py install --root %{buildroot}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/dbus-1/services/org.GTG.service
 %{_iconsdir}/hicolor/*/apps/gtg.*
+
+
+%changelog
+* Mon May 02 2011 Olivier Faurax <ofaurax@mandriva.org> 0.2.4-4mdv2011.0
++ Revision: 662744
+- silent: bump release
+- New suggests for plugins support
+
+* Sat Nov 20 2010 Jani Välimaa <wally@mandriva.org> 0.2.4-3mdv2011.0
++ Revision: 599310
+- add missing requires
+- fix source tag
+- fix typo in description
+- fix install
+- fix file list (don't own system dirs)
+
+* Tue Nov 02 2010 Michael Scherer <misc@mandriva.org> 0.2.4-2mdv2011.0
++ Revision: 592472
+- fix for python 2.7
+- rebuild for python 2.7
+
+* Mon Apr 12 2010 Olivier Faurax <ofaurax@mandriva.org> 0.2.4-1mdv2010.1
++ Revision: 533677
+- new version 0.2.4
+
+* Sat Mar 13 2010 Olivier Faurax <ofaurax@mandriva.org> 0.2.2-2mdv2010.1
++ Revision: 518750
+- Better summary
+- correct handling of lang files
+- correct handling of man file
+
+* Sat Mar 13 2010 Olivier Faurax <ofaurax@mandriva.org> 0.2.2-1mdv2010.1
++ Revision: 518618
+- New version 0.2.2
+
+* Sun Dec 20 2009 Olivier Faurax <ofaurax@mandriva.org> 0.2-1mdv2010.1
++ Revision: 480451
+- version 0.2.0 -> 0.2 + new binay gtg_new_task
+- new version: GTG 0.2.0
+
+* Sun Dec 20 2009 Olivier Faurax <ofaurax@mandriva.org> 0.1.9-1mdv2010.1
++ Revision: 480300
+- Added correct lib dir
+- Missing python-devel
+- Remove noarch, seems something is arch specific
+- Missing pyxdg dependency (2)
+- Setting as noarch
+- Missing pyxdg dependency
+- import gtg
+
+
