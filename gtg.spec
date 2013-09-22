@@ -1,12 +1,11 @@
 Name:           gtg
-Version:        0.2.4
-Release:        %mkrel 4
+Version:        0.3
+Release:        1
 Group:          Development/Other
 License:        GPLv3
 Summary:        Getting Things GNOME! is an organizer for the GNOME desktop environment
-Source:         http://launchpad.net/gtg/0.2/%{version}/+download/%{name}-%{version}.tar.gz
+Source:         https://launchpad.net/gtg/0.3/0.3/+download/%{name}-%{version}.tar.gz
 URL:            http://gtg.fritalk.com/
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: pyxdg
 BuildRequires: python-devel
@@ -23,6 +22,7 @@ Suggests: python-champlain
 Suggests: python-clutter
 Suggests: python-clutter-gtk
 #Suggests:python-geoclue
+BuildArch: noarch
 
 %description
 Getting Things Gnome! is an organizer for the GNOME desktop environment.
@@ -42,26 +42,23 @@ If you wanna know more about this, please read Getting Started With GTG.
 %build
 
 %install
-%__rm -rf %{buildroot}
 python setup.py install --root %{buildroot}
 
 %find_lang %{name}
 
-%clean
-%__rm -rf %{buildroot}
-
 %files -f %{name}.lang
-%defattr(-,root,root)
 %doc AUTHORS README CHANGELOG
 %{_bindir}/%{name}*
+%{_bindir}/gtcli
 %{_datadir}/%{name}
 %{_mandir}/man1/gtg*
+%{_mandir}/man1/gtcli*
 %{python_sitelib}/GTG
 %{python_sitelib}/%{name}-%{version}-py%{py_ver}.egg-info
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/dbus-1/services/org.GTG.service
+%{_datadir}/dbus-1/services/org.gnome.GTG.service
 %{_iconsdir}/hicolor/*/apps/gtg.*
-
+%{_datadir}/help/*/%{name}
 
 %changelog
 * Mon May 02 2011 Olivier Faurax <ofaurax@mandriva.org> 0.2.4-4mdv2011.0
@@ -110,5 +107,6 @@ python setup.py install --root %{buildroot}
 - Setting as noarch
 - Missing pyxdg dependency
 - import gtg
+
 
 

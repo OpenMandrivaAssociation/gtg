@@ -1,2 +1,4 @@
+removed_sources:
+  gtg-0.2.4.tar.gz: 8aa5ff546e35850dd106b369aae6713e86e6e67d
 sources:
-  "gtg-0.2.4.tar.gz": 8aa5ff546e35850dd106b369aae6713e86e6e67d
+  gtg-0.3.tar.gz: be57dd6a7c1405a6f8f44225bd3c8c83adf8b16d
