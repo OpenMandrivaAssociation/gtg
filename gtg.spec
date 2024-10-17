@@ -5,7 +5,7 @@ Group:          Development/Other
 License:        GPLv3
 Summary:        Getting Things GNOME! is an organizer for the GNOME desktop environment
 Source:         https://launchpad.net/gtg/0.3/0.3/+download/%{name}-%{version}.tar.gz
-URL:            http://gtg.fritalk.com/
+URL:            https://gtg.fritalk.com/
 
 BuildRequires: pyxdg
 BuildRequires: python-devel
